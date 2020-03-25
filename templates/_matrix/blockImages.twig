@@ -1,0 +1,5 @@
+<div>
+  {% for image in block.fieldImageAssets.all() %}
+    {% include '_includes/srcset' with { image: image, class: 'w-full h-auto' } %}
+  {% endfor %}
+</div>

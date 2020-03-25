@@ -1,0 +1,27 @@
+<header>
+  <ul>
+
+    {% for block in nav.fieldNavMatrix.type('block').all() %}
+      
+      {% set navLink = false %}
+        {% set navCurrent = false %}
+        {% set navTitle = false %}
+        {% if block.fieldUrl|length %}
+          {% set navLink = block.fieldUrl|slice(0,4) == 'http' ? block.fieldUrl : 'http://' ~ block.fieldUrl %}
+          {% set navTitle = block.fieldTitle|length ? block.fieldTitle : 'Link' %}
+        {% elseif block.fieldEntry|length %}
+          {% set navLink = block.fieldEntry[0].url %}
+          {% set navCurrent = entry.id == block.fieldEntry[0].id ? true %}
+          {% set navTitle = block.fieldTitle|length ? block.fieldTitle : block.fieldEntry[0].title %}
+        {% endif %}
+
+      {% if navLink %}
+        <li>
+          <a class="{{ navCurrent ? 'underline' }}" href="{{ navLink }}" target="{{ block.fieldNewWindow ? '_blank' }}">{{ block.fieldTitle }}</a>
+        </li>
+      {% endif %}
+
+    {% endfor %}
+
+  </ul>
+</header>

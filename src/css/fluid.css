@@ -1,0 +1,25 @@
+@responsive {
+  /* (min-font)px + (max-font - min-font) * ((100vw - (min-screen)px) / (max-screen - min-screen)) */
+  .t-base {
+    line-height: 1.15;
+    font-size: 20px;
+    @screen xs { font-size: calc(20px + (32 - 20) * ((100vw - 380px) / (1024 - 380))) }
+    @screen lg { font-size: 32px }
+  }
+  .t-sm {
+    font-size: 12px;
+    @screen xs { font-size: calc(12px + (16 - 12) * ((100vw - 380px) / (1024 - 380))) }
+    @screen lg { font-size: 20px }
+  }
+  .t-lg {
+    font-size: 30px;
+    @screen xs { font-size: calc(30px + (68 - 30) * ((100vw - 380px) / (1024 - 380))) }
+    @screen lg { font-size: 68px }
+  }
+
+  .t-xl {
+    font-size: 45px;
+    @screen xs { font-size: calc(45px + (225 - 45) * ((100vw - 380px) / (1024 - 380))) }
+    @screen lg { font-size: 225px }
+  }
+}

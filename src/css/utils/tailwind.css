@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@responsive {
+
+  .top-100 {
+    top: 100%;
+  }
+  .right-100 {
+    right: 100%;
+  }
+  .bottom-100 {
+    bottom: 100%;
+  }
+  .left-100 {
+    left: 100%;
+  }
+  .top-50 {
+    top: 50%;
+  }
+  .right-50 {
+    right: 50%;
+  }
+  .bottom-50 {
+    bottom: 50%;
+  }
+  .left-50 {
+    left: 50%;
+  }
+  .inset-x-15 {
+    left: 15%;
+    transform: translateX(-85%);
+  }
+  .inset-x-25 {
+    left: 25%;
+    transform: translateX(-75%);
+  }
+  .inset-x-33 {
+    left: 33.33%;
+    transform: translateX(-66.67%);
+  }
+  .inset-x-66 {
+    left: 66.67%;
+    transform: translateX(-33.33%);
+  }
+  .inset-x-75 {
+    left: 75%;
+    transform: translateX(-25%);
+  }
+  .inset-x-85 {
+    left: 85%;
+    transform: translateX(-15%);
+  }
+  .inset-y-15 {
+    top: 15%;
+    transform: translateY(-85%);
+  }
+  .inset-y-25 {
+    top: 25%;
+    transform: translateY(-75%);
+  }
+  .inset-y-33 {
+    top: 33.33%;
+    transform: translateY(-66.67%);
+  }
+  .inset-y-66 {
+    top: 66.67%;
+    transform: translateY(-33.33%);
+  }
+  .inset-y-75 {
+    top: 75%;
+    transform: translateY(-25%);
+  }
+  .inset-y-85 {
+    top: 85%;
+    transform: translateY(-15%);
+  }
+
+  .inset-m,
+  .inset-cm,
+  .inset-cm-90,
+  .inset-cm-270 {
+    top: 50%;
+  }
+
+  .inset-c,
+  .inset-cm,
+  .inset-cm-90,
+  .inset-cm-270 {
+    left: 50%;
+  }
+
+  .inset-m,
+  .inset-cm {
+    transform: translateY(-50%);
+  }
+  .inset-c,
+  .inset-cm {
+    transform: translateX(-50%);
+  }
+  .inset-cm {
+    transform: translate(-50%, -50%);
+  }
+
+  .inset-cm-90 {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  .inset-cm-270 {
+    transform: translate(-50%, -50%) rotate(270deg);
+  }
+
+  .flex-2 { flex: 2 2 0% }
+
+  .object-contain {
+    font-family: 'object-fit: contain;';
+  }
+  .object-cover {
+    font-family: 'object-fit: cover;';
+  }
+  .object-fill {
+    font-family: 'object-fit: fill;';
+  }
+  .object-none {
+    font-family: 'object-fit: none;';
+  }
+  .object-scale-down {
+    font-family: 'object-fit: scale-down;';
+  }
+
+  /*.object-bottom	object-position: bottom;
+  .object-center	object-position: center;
+  .object-left	object-position: left;
+  .object-left-bottom	object-position: left bottom;
+  .object-left-top	object-position: left top;
+  .object-right	object-position: right;
+  .object-right-bottom	object-position: right bottom;
+  .object-right-top	object-position: right top;
+  .object-top	object-position: top;*/
+
+}

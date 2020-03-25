@@ -1,0 +1,893 @@
+dateModified: 1585140621
+email:
+  fromEmail: havard@skogen.io
+  fromName: TKV
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  22edd997-2ad3-4d86-ae1d-e98fef650dca:
+    name: Common
+  8e91462e-6fd1-42e0-93c0-638133d43a6c:
+    name: Info
+  8f7b4e2c-fd3d-4bf8-9567-056a2df364bb:
+    name: Custom
+  93b6f9d6-ae4a-4150-88f3-b73688eb3bdb:
+    name: SEO
+  a81beb6f-6c27-4296-a3dc-e5f3e98cf703:
+    name: Navigasjon
+fields:
+  0609c9c3-612a-44a0-9a51-21e1241d8035:
+    contentColumnType: text
+    fieldGroup: 22edd997-2ad3-4d86-ae1d-e98fef650dca
+    handle: fieldLead
+    instructions: ''
+    name: Ingress
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  0dc67241-764d-46f5-a10d-ae487c3f7b4a:
+    contentColumnType: text
+    fieldGroup: 8e91462e-6fd1-42e0-93c0-638133d43a6c
+    handle: fieldLastname
+    instructions: ''
+    name: Etternavn
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  17cace42-5a9f-4fb1-b2ce-ffa38cf80319:
+    contentColumnType: string
+    fieldGroup: 22edd997-2ad3-4d86-ae1d-e98fef650dca
+    handle: fieldBgImageAsset
+    instructions: ''
+    name: Bakgrunnsbilde
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:9c115261-b0d0-4af1-ae62-c3b9b238731d'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: 'Velg bilde'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:9c115261-b0d0-4af1-ae62-c3b9b238731d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  1cfd90bb-9b0a-4733-a914-5b4b45b4d4f8:
+    contentColumnType: string
+    fieldGroup: 8e91462e-6fd1-42e0-93c0-638133d43a6c
+    handle: fieldFaviconAsset
+    instructions: 'Minst 180x180'
+    name: Favicon
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:9c115261-b0d0-4af1-ae62-c3b9b238731d'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: 'Velg favicon'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:9c115261-b0d0-4af1-ae62-c3b9b238731d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  1d072798-f5a3-4790-838c-a8eb134861db:
+    contentColumnType: text
+    fieldGroup: 8e91462e-6fd1-42e0-93c0-638133d43a6c
+    handle: fieldUrl
+    instructions: ''
+    name: Nettside
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'http://'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  1d67db93-ee12-4a08-af2a-a81cbd7db43a:
+    contentColumnType: integer(10)
+    fieldGroup: 8e91462e-6fd1-42e0-93c0-638133d43a6c
+    handle: fieldPO
+    instructions: ''
+    name: Postnummer
+    searchable: true
+    settings:
+      decimals: 0
+      defaultValue: null
+      max: null
+      min: '0'
+      prefix: ''
+      size: null
+      suffix: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  339694f2-3ead-4d0b-ac09-7ac4ad759265:
+    contentColumnType: text
+    fieldGroup: 93b6f9d6-ae4a-4150-88f3-b73688eb3bdb
+    handle: fieldSeoDescription
+    instructions: ''
+    name: Beskrivelse
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  492af672-14ca-4cd7-937e-760a14322d2a:
+    contentColumnType: string
+    fieldGroup: 22edd997-2ad3-4d86-ae1d-e98fef650dca
+    handle: fieldImageAsset
+    instructions: ''
+    name: Bilde
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:9c115261-b0d0-4af1-ae62-c3b9b238731d'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: 'Velg bilde'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:9c115261-b0d0-4af1-ae62-c3b9b238731d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  53170789-a2c7-40a8-8afd-39ceb0a0dbf2:
+    contentColumnType: text
+    fieldGroup: 8e91462e-6fd1-42e0-93c0-638133d43a6c
+    handle: fieldFirstname
+    instructions: ''
+    name: Fornavn
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  5722fe50-fb21-404d-ba58-be13f8fca30c:
+    contentColumnType: text
+    fieldGroup: 93b6f9d6-ae4a-4150-88f3-b73688eb3bdb
+    handle: fieldSeoTitle
+    instructions: ''
+    name: Tittel
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  65f77120-7070-4b5b-9c80-6a35a4d45beb:
+    contentColumnType: text
+    fieldGroup: 8e91462e-6fd1-42e0-93c0-638133d43a6c
+    handle: fieldInstagram
+    instructions: ''
+    name: Instagram
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'http://'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  69aa25c0-c0a0-4b25-931e-8e1406ee7958:
+    contentColumnType: text
+    fieldGroup: 8e91462e-6fd1-42e0-93c0-638133d43a6c
+    handle: fieldTwitter
+    instructions: ''
+    name: Twitter
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'http://'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  7811a352-b75c-42b8-ab97-cbc9d5e67cd3:
+    contentColumnType: text
+    fieldGroup: 8e91462e-6fd1-42e0-93c0-638133d43a6c
+    handle: fieldRegion
+    instructions: ''
+    name: Poststed
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  7d7f186f-77ff-4de7-afe8-c8333f1eb764:
+    contentColumnType: text
+    fieldGroup: 8e91462e-6fd1-42e0-93c0-638133d43a6c
+    handle: fieldLinkedin
+    instructions: ''
+    name: LinkedIn
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'http://'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  7e72ddac-a0d4-443e-b6c7-e7d62e2af56b:
+    contentColumnType: text
+    fieldGroup: 8e91462e-6fd1-42e0-93c0-638133d43a6c
+    handle: fieldFacebook
+    instructions: ''
+    name: Facebook
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'http://'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  925c263e-fdc0-489b-adbc-ddc40e6db73e:
+    contentColumnType: string
+    fieldGroup: 22edd997-2ad3-4d86-ae1d-e98fef650dca
+    handle: fieldImageAssets
+    instructions: ''
+    name: Bilder
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:9c115261-b0d0-4af1-ae62-c3b9b238731d'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: 'Velg bilder'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:9c115261-b0d0-4af1-ae62-c3b9b238731d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  9852161b-a80b-419b-bd10-7aa6bfd332ef:
+    contentColumnType: string
+    fieldGroup: 93b6f9d6-ae4a-4150-88f3-b73688eb3bdb
+    handle: fieldSeoImageAsset
+    instructions: ''
+    name: Bilde
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:9c115261-b0d0-4af1-ae62-c3b9b238731d'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: 'Velg bilde'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:9c115261-b0d0-4af1-ae62-c3b9b238731d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  993f3dfa-988e-47cf-bdea-8dd22095c010:
+    contentColumnType: string
+    fieldGroup: 8f7b4e2c-fd3d-4bf8-9567-056a2df364bb
+    handle: fieldContentMatrix
+    instructions: ''
+    name: Innhold
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_fieldcontentmatrix}}'
+      maxBlocks: ''
+      minBlocks: ''
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  9d977a47-22d6-4f98-bfc7-0bffd747756c:
+    contentColumnType: text
+    fieldGroup: 22edd997-2ad3-4d86-ae1d-e98fef650dca
+    handle: fieldRedactor
+    instructions: ''
+    name: 'Rik tekst'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  a1dac922-6747-4282-ba8c-8bcb8a41b4c6:
+    contentColumnType: text
+    fieldGroup: 8e91462e-6fd1-42e0-93c0-638133d43a6c
+    handle: fieldAddress
+    instructions: ''
+    name: Adresse
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  acb4eecf-e815-4b4f-8d52-056a68fe6ddb:
+    contentColumnType: string
+    fieldGroup: 22edd997-2ad3-4d86-ae1d-e98fef650dca
+    handle: fieldHeroImageAsset
+    instructions: ''
+    name: Hovedbilde
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:9c115261-b0d0-4af1-ae62-c3b9b238731d'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:9c115261-b0d0-4af1-ae62-c3b9b238731d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  bb12569c-1991-439d-bf32-f1feb9facfcf:
+    contentColumnType: text
+    fieldGroup: 22edd997-2ad3-4d86-ae1d-e98fef650dca
+    handle: fieldSubHead
+    instructions: ''
+    name: Mellomtittel
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c3636724-1517-4363-8ad8-25caecd41824:
+    contentColumnType: string
+    fieldGroup: a81beb6f-6c27-4296-a3dc-e5f3e98cf703
+    handle: fieldNavMatrix
+    instructions: 'Hver link må ha enten "Artikkel" eller "Ekstern adresse" for å vises.'
+    name: Navigasjon
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_fieldnavmatrix}}'
+      maxBlocks: ''
+      minBlocks: ''
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  d1828402-13c3-476a-9de9-9bdc6236d80b:
+    contentColumnType: text
+    fieldGroup: 8e91462e-6fd1-42e0-93c0-638133d43a6c
+    handle: fieldName
+    instructions: ''
+    name: Navn
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d6ff2fdb-f603-4a39-acf7-4f129f99e712:
+    contentColumnType: text
+    fieldGroup: 22edd997-2ad3-4d86-ae1d-e98fef650dca
+    handle: fieldHead
+    instructions: ''
+    name: Overskrift
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e259e7e6-7d3a-42f8-ba4a-a6beff6a85df:
+    contentColumnType: text
+    fieldGroup: 8e91462e-6fd1-42e0-93c0-638133d43a6c
+    handle: fieldEmail
+    instructions: ''
+    name: E-post
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: email@domain.com
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e8ae6ac8-49a8-4612-bca2-8ac02d2f2aee:
+    contentColumnType: text
+    fieldGroup: 8e91462e-6fd1-42e0-93c0-638133d43a6c
+    handle: fieldPhone
+    instructions: ''
+    name: Telefon
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+globalSets:
+  69fd2f02-c3f8-43af-b436-4bbf547c03de:
+    fieldLayouts:
+      2c3507bf-fd91-4ab8-9926-5e3e913e034a:
+        tabs:
+          -
+            fields:
+              c3636724-1517-4363-8ad8-25caecd41824:
+                required: false
+                sortOrder: 1
+            name: Navigasjon
+            sortOrder: 1
+    handle: nav
+    name: Navigasjon
+  dc700712-2596-40f3-9225-a95ac2d99ae5:
+    fieldLayouts:
+      41f1be93-b9b9-4ba4-bef8-58a704674808:
+        tabs:
+          -
+            fields:
+              1cfd90bb-9b0a-4733-a914-5b4b45b4d4f8:
+                required: false
+                sortOrder: 1
+            name: Innhold
+            sortOrder: 1
+    handle: general
+    name: Generelle
+matrixBlockTypes:
+  0b4bb2fe-e2bc-43aa-9ee9-4f9ec1f224e5:
+    field: 993f3dfa-988e-47cf-bdea-8dd22095c010
+    fieldLayouts:
+      66312981-7a66-4c35-a261-55504683c8e5:
+        tabs:
+          -
+            fields:
+              29022953-7086-4c98-8397-2a19fa61760c:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      29022953-7086-4c98-8397-2a19fa61760c:
+        contentColumnType: text
+        fieldGroup: null
+        handle: fieldHead
+        instructions: ''
+        name: Overskrift
+        searchable: true
+        settings:
+          byteLimit: null
+          charLimit: null
+          code: ''
+          columnType: null
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: blockHead
+    name: Overskrift
+    sortOrder: 1
+  1a9a7a90-bc17-4eec-9b00-aa16423009a4:
+    field: 993f3dfa-988e-47cf-bdea-8dd22095c010
+    fieldLayouts:
+      ba1c2fc5-1a27-4e5f-a294-90e1f7aebc59:
+        tabs:
+          -
+            fields:
+              e5039526-4fdb-45c9-8da6-af3e527feffa:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      e5039526-4fdb-45c9-8da6-af3e527feffa:
+        contentColumnType: text
+        fieldGroup: null
+        handle: fieldRedactor
+        instructions: ''
+        name: 'Rik tekst'
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: true
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+          removeEmptyTags: '1'
+          removeInlineStyles: '1'
+          removeNbsp: '1'
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+    handle: blockRedactor
+    name: 'Rik tekst'
+    sortOrder: 2
+  d5c6a115-1fc0-47e5-84e6-a60e656ae3c4:
+    field: 993f3dfa-988e-47cf-bdea-8dd22095c010
+    fieldLayouts:
+      c45b9f01-db8e-486f-81da-973d65be3a00:
+        tabs:
+          -
+            fields:
+              ed9a9b1d-9178-446d-99b7-0b33afdd1a83:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      ed9a9b1d-9178-446d-99b7-0b33afdd1a83:
+        contentColumnType: string
+        fieldGroup: null
+        handle: fieldImageAssets
+        instructions: ''
+        name: Bilder
+        searchable: true
+        settings:
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:9c115261-b0d0-4af1-ae62-c3b9b238731d'
+          defaultUploadLocationSubpath: ''
+          limit: ''
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: 'Velg bilder'
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
+          singleUploadLocationSource: 'volume:9c115261-b0d0-4af1-ae62-c3b9b238731d'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: false
+          validateRelatedElements: ''
+          viewMode: large
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+    handle: blockImages
+    name: Bilder
+    sortOrder: 3
+  fb81caa0-d751-45fd-90f8-172997f0bbc5:
+    field: c3636724-1517-4363-8ad8-25caecd41824
+    fieldLayouts:
+      ebd41bf6-9131-4c95-8e98-f729b04b3a65:
+        tabs:
+          -
+            fields:
+              06963553-5307-44cf-b786-8646a706abbd:
+                required: false
+                sortOrder: 4
+              361981cb-8afa-4a1e-b226-51a4b8b794fc:
+                required: false
+                sortOrder: 2
+              651a74ca-c00b-418c-8d2f-25668175912a:
+                required: false
+                sortOrder: 3
+              7b75e5b8-5b41-4393-9658-858954eaedbb:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      06963553-5307-44cf-b786-8646a706abbd:
+        contentColumnType: boolean
+        fieldGroup: null
+        handle: fieldNewWindow
+        instructions: ''
+        name: 'Åpne i nytt vindu?'
+        searchable: true
+        settings:
+          default: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\Lightswitch
+      361981cb-8afa-4a1e-b226-51a4b8b794fc:
+        contentColumnType: string
+        fieldGroup: null
+        handle: fieldEntry
+        instructions: ''
+        name: Artikkel
+        searchable: true
+        settings:
+          limit: '1'
+          localizeRelations: false
+          selectionLabel: 'Velg artikkel'
+          source: null
+          sources: '*'
+          targetSiteId: null
+          validateRelatedElements: ''
+          viewMode: null
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Entries
+      651a74ca-c00b-418c-8d2f-25668175912a:
+        contentColumnType: text
+        fieldGroup: null
+        handle: fieldUrl
+        instructions: 'Overstyrer artikkelfeltet over'
+        name: 'Ekstern adresse'
+        searchable: true
+        settings:
+          byteLimit: null
+          charLimit: null
+          code: ''
+          columnType: null
+          initialRows: '4'
+          multiline: ''
+          placeholder: 'http://'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      7b75e5b8-5b41-4393-9658-858954eaedbb:
+        contentColumnType: text
+        fieldGroup: null
+        handle: fieldTitle
+        instructions: 'Om dette feltet er tomt og artikkel er valgt, så vil tittelen i artikkelen brukes'
+        name: Tittel
+        searchable: true
+        settings:
+          byteLimit: null
+          charLimit: null
+          code: ''
+          columnType: null
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: block
+    name: Link
+    sortOrder: 1
+plugins:
+  dospaces:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  expanded-singles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      expandSingles: '1'
+      redirectToEntry: '1'
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+sections:
+  25572399-dcc0-45ff-96cb-14d5ceee8409:
+    enableVersioning: true
+    entryTypes:
+      29dd6c8b-5aae-42b5-8f38-840f5165b2c7:
+        fieldLayouts:
+          a73a4d69-dbb2-4d51-86fd-b332056b9c3e:
+            tabs:
+              -
+                fields:
+                  993f3dfa-988e-47cf-bdea-8dd22095c010:
+                    required: false
+                    sortOrder: 1
+                name: Innhold
+                sortOrder: 1
+        handle: example
+        hasTitleField: false
+        name: Eksempel
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: example
+    name: Eksempel
+    previewTargets: null
+    propagationMethod: all
+    siteSettings:
+      49339135-fa98-43c7-a2e5-02f62460b63a:
+        enabledByDefault: true
+        hasUrls: true
+        template: _entry
+        uriFormat: eksempel
+    type: single
+siteGroups:
+  387f8bff-8e47-482b-8ba8-fde4a8a1dbe2:
+    name: TKV
+sites:
+  49339135-fa98-43c7-a2e5-02f62460b63a:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: nb-NO
+    name: TKV
+    primary: true
+    siteGroup: 387f8bff-8e47-482b-8ba8-fde4a8a1dbe2
+    sortOrder: 1
+system:
+  edition: solo
+  live: true
+  name: $SYSTEM_NAME
+  schemaVersion: 3.4.10
+  timeZone: Europe/Oslo
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true
+volumes:
+  9c115261-b0d0-4af1-ae62-c3b9b238731d:
+    handle: digitalOcean
+    hasUrls: true
+    name: 'Digital Ocean'
+    settings:
+      bucket: $DO_BUCKET
+      contentDisposition: ''
+      endpoint: $DO_ENDPOINT
+      expires: ''
+      keyId: $DO_ACCESS_KEY
+      region: $DO_REGION
+      secret: $DO_SECRET_KEY
+      subfolder: $DO_FOLDER
+    sortOrder: 1
+    type: vaersaagod\dospaces\Volume
+    url: $DO_PRIMARY_URL

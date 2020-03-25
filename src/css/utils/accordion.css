@@ -1,0 +1,25 @@
+@responsive {
+  .u-expand-section {
+      
+    .u-expand-trigger {
+      @apply cursor-pointer;
+    }
+    .u-expand-trigger.expanded-hide {
+      @apply overflow-hidden;
+      transition: height $speed;
+    }
+
+    .u-expand-box {
+      @apply h-0 overflow-hidden;
+      transition: height .3s;
+    }
+  }
+  .u-expand-section:before {
+    content: 'enabled';
+    @apply hidden;
+  }
+  .u-no-expand-section:before {
+    content: '';
+    @apply hidden;
+  }
+}

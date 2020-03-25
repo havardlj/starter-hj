@@ -1,0 +1,44 @@
+{% set baseUrl = getenv('DEFAULT_SITE_URL') %}
+{% set staticAssetsVersion = craft.app.config.general.aliases.staticAssetsVersion %}
+
+<!DOCTYPE html>
+
+<html class="t-base" lang="{{ craft.app.language | slice(0,2) }}" prefix="og:http://ogp.me/ns# fb:http://ogp.me/ns/fb#">
+	<head>
+    <meta charset="utf-8">
+
+    {% hook 'seomateMeta' %}
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <link rel="home" href="{{ siteUrl }}">
+    <link rel="dns-prefetch" href="{{ baseUrl }}">
+    <link rel="preconnect" href="{{ baseUrl }}" crossorigin>
+
+    {% if general.fieldFaviconAsset|length %}
+      <link rel="apple-touch-icon" sizes="180x180" href="{{ general.fieldFaviconAsset[0].url({ mode: 'fit', width: 180, height: 180 }) }}">
+      <link rel="icon" type="image/png" sizes="32x32" href="{{ general.fieldFaviconAsset[0].url({ mode: 'fit', width: 32, height: 32 }) }}">
+      <link rel="icon" type="image/png" sizes="16x16" href="{{ general.fieldFaviconAsset[0].url({ mode: 'fit', width: 16, height: 16 }) }}">
+    {% endif %}
+
+    <style>{{ source("_includes/font-face.css", ignore_missing = true ) }}</style>
+
+    <link rel="stylesheet" href="/assets/css/styles.{{ 'prod' in getenv('ENVIRONMENT') ? 'min.' }}css?{{ staticAssetsVersion }}">
+
+	</head>
+
+	<body class="{{ craft.app.config.env ? 'dev' }} flex flex-col min-h-screen">
+
+    {% include '_includes/header' %}
+
+    <main class="flex-1">
+      {% block content %}{% endblock %}
+    </main>
+
+    {% include '_includes/footer' %}
+
+		<script type="text/javascript" src="/assets/js/bundle.{{ 'prod' in getenv('ENVIRONMENT') ? 'min.' }}js??{{ staticAssetsVersion }}"></script>
+
+	</body>
+</html>

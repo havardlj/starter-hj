@@ -1,0 +1,44 @@
+:root {
+
+  /* BASE */
+  --bg-color: theme('colors.background');
+  --color: theme('colors.black');
+  --transition: .3s;
+
+  --scroll-out-duration: 500ms;
+  --scroll-out-delay: 1500ms;
+  --scroll-out-offset-x: 4rem;
+  --scroll-out-offset-y: 2rem;
+
+  --container-spacing-x: theme('spacing.12');
+  --container-spacing-y: theme('spacing.12');
+  @screen sm {
+    --container-spacing-x: theme('spacing.16');
+    --container-spacing-y: theme('spacing.16');
+  }
+  @screen lg {
+    --container-spacing-x: theme('spacing.20');
+    --container-spacing-y: theme('spacing.20');
+  }
+
+  --grid-gap-x: theme('spacing.12');
+  --grid-gap-y: theme('spacing.12');
+  @screen md {
+    --grid-gap-x: theme('spacing.16');
+    --grid-gap-y: theme('spacing.16');
+  }
+
+  --box-spacing-x: theme('spacing.12');
+  --box-spacing-y: theme('spacing.12');
+  @screen sm {
+    --box-spacing-x: theme('spacing.16');
+    --box-spacing-y: theme('spacing.16');
+  }
+  @screen xl {
+    --box-spacing-x: theme('spacing.20');
+    --box-spacing-y: theme('spacing.20');
+  }
+  
+}
+  
+}

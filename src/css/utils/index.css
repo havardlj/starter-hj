@@ -1,0 +1,139 @@
+@import 'tailwind';
+@import 'grid';
+/* @import 'accordion'; */
+/* @import 'scroll-out'; */
+
+* {
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  @apply overflow-x-hidden
+}
+
+body.dev:before {
+  @apply fixed bottom-0 left-0 block bg-white z-50 px-ems-2 py-ems-1 font-mono leading-none;
+  font-size: 11px;
+  content: '0';
+  @screen xs { content: 'xs' }
+  @screen sm { content: 'sm' }
+  @screen md { content: 'md' }
+  @screen lg { content: 'lg' }
+  @screen xl { content: 'xl' }
+  @screen full { content: 'full' }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@responsive {
+
+  @variants group-hover, hover, focus, active {
+    .u-text-shadow { text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) }
+    .u-text-shadow-lg { text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) }
+  }
+
+  .u-splash {
+    @apply h-full;
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+    @supports not( -moz-appearance:none ){
+      @apply h-screen;
+    }
+  }
+
+  .u-button-disable { @apply cursor-default pointer-events-none opacity-33 }
+  .u-blend-screen { mix-blend-mode: screen }
+  .u-filter-bw { filter: grayscale(100%) }
+  .u-circle { border-radius: 50% }
+
+  @each $x, $y in
+    (1, 1, 1, 9, 2, 3, 4, 1),
+    (4, 3, 2, 16, 3, 4, 5, 1) {
+
+    .u-box-$(x)\:$(y) {
+      @apply block overflow-hidden;
+    }
+    .u-box-$(x)\:$(y):before {
+      @apply block;
+      content: '';
+      padding-top: calc(($(y)/$(x)) * 100%);
+    }
+
+    .u-box-$(y)\:$(x) {
+      @apply block overflow-hidden;
+    }
+    .u-box-$(y)\:$(x):before {
+      @apply block;
+      content: '';
+      padding-top: calc(($(x)/$(y)) * 100%);
+    }
+
+  }
+  .u-no-box:before {
+    display: none!important;
+  }
+
+  @each $side, $s, $axis in
+    (top, right, bottom, left),
+    (t, r, b, l),
+    (y, x, y, x) {
+    
+    .site-padding,
+    .site-padding-$(s),
+    .site-padding-$(axis) {
+      padding-$(side): var(--container-spacing-$(axis))
+    }
+    .site-margin,
+    .site-margin-$(s),
+    .site-margin-$(axis) {
+      margin-$(side): var(--container-spacing-$(axis))
+    }
+    .-site-margin,
+    .-site-margin-$(s),
+    .-site-margin-$(axis) {
+      margin-$(side): calc(-1 * var(--container-spacing-$(axis)))
+    }
+    .p-grid-gap,
+    .p$(s)-grid-gap,
+    .p$(axis)-grid-gap {
+      padding-$(side): var(--grid-gap-$(axis))
+    }
+    .m-grid-gap,
+    .m$(s)-grid-gap,
+    .m$(axis)-grid-gap {
+      margin-$(side): var(--grid-gap-$(axis))
+    }
+    .-m-grid-gap,
+    .-m$(s)-grid-gap,
+    .-m$(axis)-grid-gap {
+      margin-$(side): calc(-1 * var(--grid-gap-$(axis)))
+    }
+    .p-box,
+    .p$(s)-box,
+    .p$(axis)-box {
+      padding-$(side): var(--box-spacing-$(axis))
+    }
+    .m-box,
+    .m$(s)-box,
+    .m$(axis)-box {
+      margin-$(side): var(--box-spacing-$(axis))
+    }
+    .-m-box,
+    .-m$(s)-box,
+    .-m$(axis)-box {
+      margin-$(side): calc(-1 * var(--box-spacing-$(axis)))
+    }
+
+  }
+
+}

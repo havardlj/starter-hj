@@ -1,0 +1,11 @@
+{% set prevBlock = false %}
+<!-- contentMatrix -->
+
+{% for block in matrix %}
+	<!-- {{ block.type.handle }} -->
+	{% include ['_matrix/' ~ block.type.handle, '_matrix/default'] %}
+	<!-- /{{ block.type.handle }} -->
+	{% set prevBlock = block.type.handle %}
+{% endfor %}
+
+<!-- /contentMatrix -->

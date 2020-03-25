@@ -1,0 +1,8 @@
+{% extends '_entry/default' %}
+{% block content %}
+
+  {% if entry.fieldContentMatrix %}
+		{% include '_matrix' with { matrix : entry.fieldContentMatrix.all() } %}
+	{% endif %}
+  
+{% endblock %}

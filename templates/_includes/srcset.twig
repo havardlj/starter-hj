@@ -1,0 +1,93 @@
+{# variables: image, class, style, crop, maxWidth, minWidth #}
+
+{% spaceless %}
+
+	{% if image|length %}
+
+		{% set imageWidth = image.width %}
+		{% set imageHeight = image.height %}
+		{% set imgOptions = { quality: 100 } %}
+
+		{% set crop = crop|default(0) %}
+		{% if crop|length >= 3 %}
+
+			{% set crop = crop|split(':') %}
+			{% set cropRatio = crop[1] / crop[0] %}
+
+			{% set imgOptions = imgOptions|merge({
+				mode: 'crop', 
+				position:
+					image.focalPoint.x ~ '-' ~
+					image.focalPoint.y
+			}) %}
+
+		{% else %}
+			{% set crop = false %}
+		{% endif %}
+
+		{% set srcWidths = [380, 768, 980, 1200, 1440, 2000] %}
+		{% set maxWidth = maxWidth|default(srcWidths[5]) %}
+		{% set minWidth = minWidth|default(srcWidths[0]) %}
+		{% set srcset = [] %}
+		{% set max = false %}
+
+		{% for width in srcWidths %}
+
+			{% if width <= maxWidth and width <= imageWidth %}
+				{% set srcsetOptions = imgOptions|merge({ width: width }) %}
+				{% if crop %}
+					{% set srcsetOptions = srcsetOptions|merge({ height: width * cropRatio }) %}
+				{% endif %}
+				{% set srcset = srcset|merge([image.url(srcsetOptions) ~ ' ' ~ width ~ 'w']) %}
+			{% endif %}
+
+			{% if image.width < maxWidth and imageWidth > width %}
+				{% set max = true %}
+			{% endif %}
+
+		{% endfor %}
+
+		{% if max == true %}
+			{% set srcsetOptions = imgOptions|merge({ width: imageWidth }) %}
+			{% if crop %}
+				{% set srcsetOptions = srcsetOptions|merge({ height: imageWidth * cropRatio }) %}
+			{% endif %}
+			{% set srcset = srcset|merge([image.url(srcsetOptions) ~ ' ' ~ imageWidth ~ 'w']) %}
+		{% endif %}
+
+		{% set srcOptions = imgOptions|merge({ width: srcWidths[1] }) %}
+		{% if crop %}
+			{% set srcOptions = srcOptions|merge({ height: srcWidths[1] * cropRatio }) %}
+		{% endif %}
+		
+		{% set src = image.url(srcOptions) %}
+
+		{% set srcOptionsLow = imgOptions|merge({ width: srcWidths[0] }) %}
+		{% if crop %}
+			{% set srcOptionsLow = srcOptionsLow|merge({ height: srcWidths[0] * cropRatio }) %}
+		{% endif %}
+		{% set srcLow = image.url(srcOptionsLow) %}
+
+		{% set srcset = srcset|join(', ') %}
+
+		<div class="relative overflow-hidden">
+			<img
+				class="lazyload lazyload-class{{ class is defined ? ' ' ~ class }}"
+        style="{{ style is defined ? style }}"
+				alt="{{ image.title }}"
+				width="{{ imageWidth }}"
+				height="{{ imageHeight }}"
+				{{ crop ? 'data-crop="' ~ crop[0] ~ ':' ~ crop[1] ~ '"' }}
+				data-src="{{ src }}"
+				data-sizes="auto"
+			  src="{{ src }}"
+				data-srcset="{{ srcset }}">
+		</div>
+		<noscript>
+			<img src="{{ src }}" alt="{{ image.title }}" class="{{ class is defined ? class|raw }}">
+		</noscript>
+	
+
+	{% endif %}
+
+{% endspaceless %}

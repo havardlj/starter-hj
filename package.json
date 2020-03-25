@@ -1,0 +1,66 @@
+{
+  "name": "tkv",
+  "version": "1.0.0",
+  "description": "tkv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skogendev/tkv.git"
+  },
+  "author": "Håvard L. Johansen (skogen.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skogendev/tkv/issues"
+  },
+  "homepage": "https://github.com/skogendev/tkv#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.1",
+    "browser-sync": "^2.26.7",
+    "css-loader": "^3.4.2",
+    "gulp": "^4.0.2",
+    "gulp-cache-bust": "^1.4.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-cssimport": "^7.0.0",
+    "gulp-error-handle": "^1.0.1",
+    "gulp-mode": "^1.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-purgecss": "^1.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "install": "^0.13.0",
+    "lazysizes": "^5.2.0",
+    "npm": "^6.14.1",
+    "object-fit-images": "^3.2.4",
+    "postcss-each": "^0.10.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-for": "^2.1.1",
+    "script-loader": "^0.7.2",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^1.1.3",
+    "webpack": "^4.41.6",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {},
+  "paths": {
+    "siteUrl": {
+      "dev": "https://tkv.test"
+    },
+    "src": {
+      "base": "./src",
+      "css": "./src/css/",
+      "js": "./src/js/"
+    },
+    "dest": {
+      "css": "./web/assets/css/",
+      "js": "./web/assets/js/"
+    },
+    "templates": "./templates/",
+    "craft": {
+      "config": "./config/"
+    }
+  }
+}

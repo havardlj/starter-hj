@@ -1,0 +1,49 @@
+@responsive {
+  .u-scroll-opacity,
+  .u-scroll-down,
+  .u-scroll-left
+  .u-scroll-up,
+  .u-scroll-right,
+  .u-scroll-children .u-scroll-child {
+    @apply transition;
+    transition-delay: var(--scoll-out-delay);
+  }
+  
+  .u-scroll-opacity:not([class*="duration-"]),
+  .u-scroll-down:not([class*="duration-"]),
+  .u-scroll-left:not([class*="duration-"]),
+  .u-scroll-up:not([class*="duration-"]),
+  .u-scroll-right:not([class*="duration-"]),
+  .u-scroll-children:not([class*="duration-"]) .u-scroll-child {
+    transition-duration: var(--scroll-out-duration)
+  }
+
+  .u-scroll-opacity[data-scroll="out"] { @apply opacity-0 }
+  .u-scroll-opacity[data-scroll="in"] { @apply opacity-100 }
+
+  .u-scroll-down[data-scroll="out"] { transform: translateY(calc(var(--scroll-out-offset-y) * -1)) }
+  .u-scroll-left[data-scroll="out"] { transform: translateX(var(--scroll-out-offset-x)) }
+  .u-scroll-up[data-scroll="out"] { transform: translateY(var(--scroll-out-offset-y)) }
+  .u-scroll-right[data-scroll="out"] { transform: translateX(calc(var(--scroll-out-offset-x) * -1)) }
+  
+  .u-scroll-down[data-scroll="in"],
+  .u-scroll-left[data-scroll="in"],
+  .u-scroll-up[data-scroll="in"],
+  .u-scroll-right[data-scroll="in"] { transform: translate(0,0) }
+
+  .u-scroll-opacity-vp { opacity: calc(1 - var(--viewport-y)) }
+  
+  .u-scroll-float-y-fast { transform: translateY(calc(var(--viewport-y) * -33%)) }
+  .u-scroll-float-y { transform: translateY(calc(var(--viewport-y) * -25%)) }
+  .u-scroll-float-y-slow { transform: translateY(calc(var(--viewport-y) * -10%)) }
+}
+
+/* purgecss ignore */
+@for $i from 1 to 12 { 
+  .u-scroll-children[data-scroll="in"] > *:nth-child($i) .u-scroll-child,
+  .u-scroll-children[data-scroll="in"] > .u-scroll-child:nth-child($i) {
+    @apply opacity-100 transition;
+    transition-duration: var(--scroll-out-duration);
+    transition-delay: calc($i * 300ms);
+  }
+}
