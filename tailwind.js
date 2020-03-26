@@ -20,7 +20,7 @@ module.exports = {
     colors: {
 
       transparent: 'transparent',
-      background: '#EEC451',
+      background: 'green',
 
       black: '#000',
       white: '#fff',
@@ -43,7 +43,7 @@ module.exports = {
       'site-md': '2rem',
       'site-ems': '1em',
 
-      px: '1px',
+      '1px': '1px',
       '1em': '1em',
       '0': '0',
       '1': '0.25rem',

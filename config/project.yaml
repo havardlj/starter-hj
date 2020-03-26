@@ -1,4 +1,4 @@
-dateModified: 1585140621
+dateModified: 1585224849
 email:
   fromEmail: havard@skogen.io
   fromName: TKV
@@ -15,6 +15,24 @@ fieldGroups:
   a81beb6f-6c27-4296-a3dc-e5f3e98cf703:
     name: Navigasjon
 fields:
+  0500aefc-3876-43ef-acb0-e777eca21704:
+    contentColumnType: text
+    fieldGroup: 22edd997-2ad3-4d86-ae1d-e98fef650dca
+    handle: fieldImageCaption
+    instructions: ''
+    name: Bildetekst
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   0609c9c3-612a-44a0-9a51-21e1241d8035:
     contentColumnType: text
     fieldGroup: 22edd997-2ad3-4d86-ae1d-e98fef650dca
@@ -813,6 +831,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  seomate:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   super-table:
     edition: standard
     enabled: true
@@ -876,6 +898,16 @@ users:
   requireEmailVerification: true
 volumes:
   9c115261-b0d0-4af1-ae62-c3b9b238731d:
+    fieldLayouts:
+      078f480f-0e0d-4ba9-919f-f1176fcad965:
+        tabs:
+          -
+            fields:
+              0500aefc-3876-43ef-acb0-e777eca21704:
+                required: false
+                sortOrder: 1
+            name: Innhold
+            sortOrder: 1
     handle: digitalOcean
     hasUrls: true
     name: 'Digital Ocean'

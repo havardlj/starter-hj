@@ -19,7 +19,7 @@ html {
 }
 
 body.dev:before {
-  @apply fixed bottom-0 left-0 block bg-white z-50 px-ems-2 py-ems-1 font-mono leading-none;
+  @apply fixed bottom-0 right-0 block bg-white z-50 px-ems-2 py-ems-1 font-mono leading-none;
   font-size: 11px;
   content: '0';
   @screen xs { content: 'xs' }

@@ -14,10 +14,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
 }
 
+/* purgecss start ignore */
 .wysiwyg {
   a { text-decoration: underline; }
   p:not(:last-child) {  }
 }
+/* purgecss end ignore */
 
 .max-w-head { max-width: 8em }
 .max-w-textbox { max-width: 28em }
